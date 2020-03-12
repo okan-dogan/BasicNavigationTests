@@ -13,7 +13,7 @@ public class BrowserFactory {
         if(browserName.equalsIgnoreCase("safari")){
             return null;
         }else if(browserName.equalsIgnoreCase("chrome")){
-            WebDriverManager.chromedriver().version("79").setup();
+            WebDriverManager.chromedriver().version("80").setup();
             return new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){
             WebDriverManager.firefoxdriver().setup();
